@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mabroor - Halal Products from Brazil to the World</title>
-    <meta name="description" content="Mabroor: Representação comercial de produtos industrializados Halal do Brasil para todo o mundo.">
+    <title>Mabroor - Produtos Halal do Brasil</title>
+    <meta name="description" content="Mabroor: Representação comercial de produtos Halal do Brasil para todo o mundo.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
     
     <!-- Fontes: Inter (Latino) e Cairo (Árabe) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +14,9 @@
     
     <style>
         :root {
-            --primary: #047857; /* Verde Esmeralda (remete a Halal/Natureza) */
+            --primary: #047857;
             --primary-dark: #065f46;
-            --accent: #d97706; /* Dourado/Âmbar para destaque */
+            --accent: #d97706;
             --text: #1e293b;
             --text-light: #64748b;
             --bg: #ffffff;
@@ -39,7 +40,6 @@
             line-height: 1.6;
         }
 
-        /* Suporte perfeito para Árabe */
         :lang(ar) body {
             font-family: 'Cairo', sans-serif;
         }
@@ -65,10 +65,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 1rem;
         }
 
-        .logo {
-            font-size: 1.75rem;
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
@@ -92,7 +104,6 @@
             color: var(--primary);
         }
 
-        /* Seletor de Idioma */
         .lang-switcher {
             display: flex;
             gap: 0.5rem;
@@ -121,6 +132,13 @@
             color: white;
             padding: 6rem 0;
             text-align: center;
+        }
+
+        .hero-logo {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto 2rem;
+            display: block;
         }
 
         .hero h1 {
@@ -245,6 +263,14 @@
             .hero h1 {
                 font-size: 2rem;
             }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .logo-text {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
@@ -252,7 +278,11 @@
 
     <header>
         <div class="container nav-wrapper">
-            <a href="#" class="logo">Mabroor</a>
+            <div class="logo-container">
+                <!-- Substitua 'logo-mabroor.png' pelo caminho da sua imagem de logo -->
+                <img src="logo-mabroor.png" alt="Mabroor Logo" class="logo-img" onerror="this.style.display='none'">
+                <a href="#" class="logo-text">Mabroor</a>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
@@ -272,8 +302,10 @@
     <main>
         <section class="hero" id="home">
             <div class="container">
+                <!-- Logo na seção hero (opcional - remova se não quiser) -->
+                <!-- <img src="logo-mabroor.png" alt="Mabroor" class="hero-logo"> -->
                 <h1 data-i18n="hero_title">Produtos Halal do Brasil para o Mundo</h1>
-                <p data-i18n="hero_subtitle">A Mabroor é sua parceira confiável na representação e comercialização de produtos industrializados Halal brasileiros com excelência e qualidade para o mercado global.</p>
+                <p data-i18n="hero_subtitle">A Mabroor é sua parceira confiável na representação e comercialização de produtos alimentícios Halal brasileiros com excelência e qualidade para o mercado global.</p>
                 <a href="#contact" class="btn" data-i18n="hero_cta">Fale Conosco</a>
             </div>
         </section>
@@ -291,7 +323,7 @@
             <div class="container">
                 <h2 class="section-title" data-i18n="products_title">Nossos Produtos</h2>
                 <div class="content-box">
-                    <p data-i18n="products_text">Comercializamos uma vasta gama de produtos industrializados Halal de alta qualidade, provenientes das melhores indústrias do Brasil, atendendo aos rigorosos padrões internacionais.</p>
+                    <p data-i18n="products_text">Comercializamos uma vasta gama de produtos alimentícios Halal de alta qualidade, provenientes das melhores indústrias do Brasil, atendendo aos rigorosos padrões internacionais.</p>
                 </div>
             </div>
         </section>
@@ -333,12 +365,12 @@
                 nav_products: "Produtos",
                 nav_contact: "Contato",
                 hero_title: "Produtos Halal do Brasil para o Mundo",
-                hero_subtitle: "A Mabroor é sua parceira confiável na representação e comercialização de produtos industrializados Halal brasileiros com excelência e qualidade para o mercado global.",
+                hero_subtitle: "A Mabroor é sua parceira confiável na representação e comercialização de produtos alimentícios Halal brasileiros com excelência e qualidade para o mercado global.",
                 hero_cta: "Fale Conosco",
                 about_title: "Sobre a Mabroor",
                 about_text: "Sediada em São Paulo, SP, Brasil, a Mabroor atua como uma ponte estratégica entre a indústria brasileira e o mercado internacional, garantindo autenticidade, certificação Halal e logística eficiente.",
                 products_title: "Nossos Produtos",
-                products_text: "Comercializamos uma vasta gama de produtos industrializados Halal de alta qualidade, provenientes das melhores indústrias do Brasil, atendendo aos rigorosos padrões internacionais.",
+                products_text: "Comercializamos uma vasta gama de produtos alimentícios Halal de alta qualidade, provenientes das melhores indústrias do Brasil, atendendo aos rigorosos padrões internacionais.",
                 contact_title: "Entre em Contato",
                 contact_email_label: "E-mail",
                 contact_phone_label: "Telefone",
@@ -350,12 +382,12 @@
                 nav_products: "Products",
                 nav_contact: "Contact",
                 hero_title: "Halal Products from Brazil to the World",
-                hero_subtitle: "Mabroor is your trusted partner in the representation and commercialization of Brazilian Halal industrialized products with excellence and quality for the global market.",
+                hero_subtitle: "Mabroor is your trusted partner in the representation and commercialization of Brazilian Halal food products with excellence and quality for the global market.",
                 hero_cta: "Contact Us",
                 about_title: "About Mabroor",
                 about_text: "Based in São Paulo, SP, Brazil, Mabroor acts as a strategic bridge between Brazilian industry and the international market, ensuring authenticity, Halal certification, and efficient logistics.",
                 products_title: "Our Products",
-                products_text: "We commercialize a wide range of high-quality Halal industrialized products from the best industries in Brazil, meeting strict international standards.",
+                products_text: "We commercialize a wide range of high-quality Halal food products from the best industries in Brazil, meeting strict international standards.",
                 contact_title: "Contact Us",
                 contact_email_label: "Email",
                 contact_phone_label: "Phone",
@@ -367,12 +399,12 @@
                 nav_products: "Produits",
                 nav_contact: "Contact",
                 hero_title: "Produits Halal du Brésil vers le Monde",
-                hero_subtitle: "Mabroor est votre partenaire de confiance dans la représentation et la commercialisation de produits industriels halal du Brésil avec excellence et qualité pour le marché mondial.",
+                hero_subtitle: "Mabroor est votre partenaire de confiance dans la représentation et la commercialisation de produits alimentaires halal du Brésil avec excellence et qualité pour le marché mondial.",
                 hero_cta: "Contactez-nous",
                 about_title: "À propos de Mabroor",
                 about_text: "Basée à São Paulo, SP, Brésil, Mabroor agit comme un pont stratégique entre l'industrie brésilienne et le marché international, garantissant authenticité, certification halal et logistique efficace.",
                 products_title: "Nos Produits",
-                products_text: "Nous commercialisons une large gamme de produits industriels halal de haute qualité, provenant des meilleures industries du Brésil, répondant aux normes internationales strictes.",
+                products_text: "Nous commercialisons une large gamme de produits alimentaires halal de haute qualité, provenant des meilleures industries du Brésil, répondant aux normes internationales strictes.",
                 contact_title: "Contactez-nous",
                 contact_email_label: "E-mail",
                 contact_phone_label: "Téléphone",
@@ -381,29 +413,27 @@
             },
             ar: {
                 nav_about: "من نحن",
-                nav_products: "المنتجات",
+                nav_products: "منتجاتنا",
                 nav_contact: "اتصل بنا",
                 hero_title: "منتجات حلال من البرازيل إلى العالم",
-                hero_subtitle: "تُعد مبرور شريكك الموثوق في تمثيل وتسويق المنتجات الصناعية الحلال البرازيلية بجودة وتميز للأسواق العالمية.",
+                hero_subtitle: "تُعد مبرور شريكك الموثوق في تمثيل وتسويق المنتجات الغذائية الحلال البرازيلية بجودة وتميز للأسواق العالمية",
                 hero_cta: "اتصل بنا",
                 about_title: "عن مبرور",
-                about_text: "ومقرها في ساو باولو، البرازيل، تعمل مبرور كجسر استراتيجي بين الصناعة البرازيلية والأسواق الدولية، مما يضمن الأصالة، وشهادة الحلال، وكفاءة الخدمات اللوجستية.",
+                about_text: "ومقرها في ساو باولو، البرازيل، تعمل مبرور كجسر استراتيجي بين الصناعة البرازيلية والأسواق الدولية، مما يضمن الأصالة، وشهادة الحلال، وكفاءة الخدمات اللوجستية",
                 products_title: "منتجاتنا",
-                products_text: "نقوم بتسويق مجموعة واسعة من المنتجات الصناعية الحلال عالية الجودة من أفضل المصانع في البرازيل، لتلبية المعايير الدولية الصارمة.",
+                products_text: "نقوم بتسويق مجموعة واسعة من المنتجات الغذائية الحلال عالية الجودة من أفضل المصانع في البرازيل، لتلبية المعايير الدولية الصارمة",
                 contact_title: "اتصل بنا",
                 contact_email_label: "البريد الإلكتروني",
-                contact_phone_label: "هاتف",
-                contact_location_label: "موقع",
+                contact_phone_label: "الهاتف",
+                contact_location_label: "الموقع",
                 footer_text: "© 2026 مبرور. جميع الحقوق محفوظة. | baymabroor.com"
             }
         };
 
         function setLanguage(lang) {
-            // Atualiza o idioma e a direção do texto (RTL para Árabe)
             document.documentElement.lang = lang;
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
             
-            // Atualiza o texto de todos os elementos com o atributo data-i18n
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 if (translations[lang][key]) {
@@ -411,7 +441,6 @@
                 }
             });
 
-            // Atualiza o estado visual dos botões
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
                 if (btn.textContent.toLowerCase() === lang) {
@@ -421,4 +450,4 @@
         }
     </script>
 </body>
-              </html>
+                                                                                  </html>
