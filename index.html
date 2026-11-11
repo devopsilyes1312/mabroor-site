@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mabroor - Produtos Halal do Brasil</title>
     <meta name="description" content="Mabroor: Representação comercial de produtos Halal do Brasil para todo o mundo.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
     
     <!-- Fontes: Inter (Latino) e Cairo (Árabe) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,13 +131,6 @@
             color: white;
             padding: 6rem 0;
             text-align: center;
-        }
-
-        .hero-logo {
-            max-width: 200px;
-            height: auto;
-            margin: 0 auto 2rem;
-            display: block;
         }
 
         .hero h1 {
@@ -279,7 +271,7 @@
     <header>
         <div class="container nav-wrapper">
             <div class="logo-container">
-                <!-- Substitua 'logo-mabroor.png' pelo caminho da sua imagem de logo -->
+                <!-- Substitua 'logo-mabroor.png' pelo caminho real da sua imagem de logo -->
                 <img src="logo-mabroor.png" alt="Mabroor Logo" class="logo-img" onerror="this.style.display='none'">
                 <a href="#" class="logo-text">Mabroor</a>
             </div>
@@ -302,8 +294,6 @@
     <main>
         <section class="hero" id="home">
             <div class="container">
-                <!-- Logo na seção hero (opcional - remova se não quiser) -->
-                <!-- <img src="logo-mabroor.png" alt="Mabroor" class="hero-logo"> -->
                 <h1 data-i18n="hero_title">Produtos Halal do Brasil para o Mundo</h1>
                 <p data-i18n="hero_subtitle">A Mabroor é sua parceira confiável na representação e comercialização de produtos alimentícios Halal brasileiros com excelência e qualidade para o mercado global.</p>
                 <a href="#contact" class="btn" data-i18n="hero_cta">Fale Conosco</a>
@@ -335,12 +325,14 @@
                     <div class="contact-card">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                         <h3 data-i18n="contact_email_label">E-mail</h3>
-                        <a href="mailto:ilyes@baymabroor.com">ilyes@baymabroor.com</a>
+                        <!-- bdi dir="ltr" impede que o e-mail fique espelhado no modo árabe -->
+                        <a href="mailto:ilyes@baymabroor.com"><bdi dir="ltr">ilyes@baymabroor.com</bdi></a>
                     </div>
                     <div class="contact-card">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         <h3 data-i18n="contact_phone_label">Telefone</h3>
-                        <a href="tel:+5511977394147">+55 11 97739-4147</a>
+                        <!-- bdi dir="ltr" impede que o número fique espelhado (ex: 7414-937791155+) no modo árabe -->
+                        <a href="tel:+5511977394147"><bdi dir="ltr">+55 11 97739-4147</bdi></a>
                     </div>
                     <div class="contact-card">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -354,7 +346,7 @@
 
     <footer>
         <div class="container">
-            <p data-i18n="footer_text">© 2026 Mabroor. Todos os direitos reservados. | <a href="https://baymabroor.com" target="_blank">baymabroor.com</a></p>
+            <p data-i18n="footer_text">© 2026 Mabroor. Todos os direitos reservados. | <a href="https://baymabroor.com" target="_blank"><bdi dir="ltr">baymabroor.com</bdi></a></p>
         </div>
     </footer>
 
@@ -450,4 +442,4 @@
         }
     </script>
 </body>
-                                                                              </html>
+</html>
