@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mabroor | Produtos Halal do Brasil para o Mundo</title>
+<meta name="description" content="Mabroor: representação comercial e exportação de produtos alimentícios Halal brasileiros para o Oriente Médio, África e Ásia.">
+<meta name="theme-color" content="#065f46">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mabroor | Produtos Halal do Brasil para o Mundo">
+<meta property="og:description" content="Representação comercial, conformidade regulatória e logística de exportação para produtos Halal brasileiros.">
+<meta property="og:url" content="https://baymabroor.com">
+<link rel="canonical" href="https://baymabroor.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Mabroor Representação Comercial e Comércio Exterior Ltda.","url":"https://baymabroor.com","email":"ilyes@baymabroor.com","telephone":"+5511984112352","address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}}
+</script>
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+:root{
+  --primary:#047857;
+  --primary-dark:#065f46;
+  --ink:#0a2e24;
+  --accent:#d97706;
+  --accent-dark:#b45309;
+  --accent-soft:#fef3c7;
+  --text:#1e293b;
+  --text-light:#5b6779;
+  --bg:#ffffff;
+  --bg-alt:#f5f8f6;
+  --line:#e2e8e4;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(6,95,70,.10);
+  --header-h:72px;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-title:'Playfair Display',Georgia,serif;
+}
+:lang(ar){--font-body:'Cairo',system-ui,sans-serif;--font-title:'Cairo',system-ui,sans-serif}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+section[id]{scroll-margin-top:var(--header-h)}
+.container{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;inset-inline-start:1rem;inset-block-start:-4rem;background:var(--ink);color:#fff;padding:.6rem 1rem;border-radius:8px;z-index:2000;text-decoration:none}
+.skip:focus{inset-block-start:1rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* Header */
+header{position:sticky;inset-block-start:0;z-index:1000;height:var(--header-h);background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-block-end:1px solid var(--line)}
+.nav-wrapper{height:100%;display:flex;align-items:center;gap:1rem}
+.logo-container{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--primary-dark)}
+.logo-img{height:46px;width:auto}
+.logo-mark{display:none;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;font-family:var(--font-title);font-weight:700;font-size:1.4rem;place-items:center}
+.no-logo .logo-img{display:none}
+.no-logo .logo-mark{display:grid}
+.logo-text{font-family:var(--font-title);font-size:1.5rem;font-weight:700;letter-spacing:-.3px}
+.nav{position:absolute;inset-block-start:100%;inset-inline:0;background:#fff;border-block-end:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.08);display:none;flex-direction:column;padding:.5rem 1.25rem 1.25rem}
+.nav.open{display:flex}
+.nav a{text-decoration:none;font-weight:500;padding:.9rem .25rem;border-block-end:1px solid var(--line);transition:color .2s}
+.nav a:last-child{border-block-end:0}
+.nav a:hover{color:var(--primary)}
+.lang-switcher{margin-inline-start:auto;display:flex;gap:.25rem}
+.lang-btn{background:none;border:1px solid var(--line);border-radius:8px;padding:.3rem .6rem;cursor:pointer;font:600 .78rem var(--font-body);color:var(--text-light);transition:all .2s}
+.lang-btn:hover{border-color:var(--primary);color:var(--primary)}
+.lang-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+.burger{width:44px;height:44px;border:0;background:none;display:grid;place-content:center;gap:5px;cursor:pointer;border-radius:10px}
+.burger span{display:block;width:24px;height:2px;background:var(--primary-dark);border-radius:2px;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.9rem 1.8rem;border-radius:999px;border:1.5px solid transparent;font:600 .98rem var(--font-body);text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;fill:currentColor;flex:none}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-dark)}
+.btn-ghost{border-color:rgba(255,255,255,.65);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--primary-dark)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1ebe5a}
+.btn-green{background:var(--primary);color:#fff}
+.btn-green:hover{background:var(--primary-dark)}
+.btn-line{border-color:var(--primary);color:var(--primary)}
+.btn-line:hover{background:var(--primary);color:#fff}
+
+/* Hero */
+.hero{position:relative;color:#fff;padding-block:clamp(4.5rem,11vw,8.5rem);background:radial-gradient(900px 500px at 85% 0%,rgba(217,119,6,.28),transparent 60%),linear-gradient(135deg,var(--ink),var(--primary-dark) 55%,var(--primary));overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.9;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.07' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .container{position:relative;z-index:1}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#f4c27a;margin-block-end:1rem}
+:lang(ar) .eyebrow{letter-spacing:0;font-size:.95rem}
+.hero h1{font-family:var(--font-title);font-size:clamp(2.2rem,6.5vw,4rem);line-height:1.12;max-width:15em;margin-block-end:1.2rem}
+.hero p.lead{font-size:clamp(1.05rem,2.2vw,1.3rem);max-width:40rem;opacity:.92;margin-block-end:2rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-block-end:2.5rem}
+.badges{display:flex;flex-wrap:wrap;gap:.6rem}
+.badge{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .95rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-size:.85rem;font-weight:500}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#f4c27a}
+
+/* Sections */
+.section{padding-block:clamp(3.5rem,8vw,6rem)}
+.section-alt{background:var(--bg-alt)}
+.section-head{max-width:46rem;margin-block-end:2.75rem}
+.section-head.center{margin-inline:auto;text-align:center}
+.section-head .eyebrow{color:var(--accent-dark)}
+.section-title{font-family:var(--font-title);font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.2;color:var(--primary-dark);margin-block-end:.8rem}
+.section-sub{color:var(--text-light);font-size:1.08rem}
+.grid{display:grid;gap:1.4rem}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(6,95,70,.16)}
+.card .ico{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#e6f4ee,#d4ece2);color:var(--primary);display:grid;place-items:center;margin-block-end:1.1rem}
+.card .ico svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.2rem;color:var(--primary-dark);margin-block-end:.5rem;line-height:1.3}
+.card p{color:var(--text-light);font-size:.98rem}
+
+/* About */
+.about-text{max-width:50rem;font-size:1.12rem;color:#3b4656}
+.about-text p+p{margin-block-start:1rem}
+.about-cards{margin-block-start:2.5rem}
+
+/* Process */
+.steps{counter-reset:s;display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.step{position:relative;padding:1.6rem;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--primary);color:#fff;font-weight:700;margin-block-end:.9rem;font-family:'Inter',sans-serif}
+.step h3{font-size:1.1rem;color:var(--primary-dark);margin-block-end:.35rem}
+.step p{color:var(--text-light);font-size:.95rem}
+
+/* Products */
+.product{display:flex;flex-direction:column;gap:.4rem;border-inline-start:5px solid var(--accent)}
+.note{margin-block-start:1.8rem;padding:1rem 1.3rem;border-radius:12px;background:var(--accent-soft);color:#7c4a03;font-size:.95rem;font-weight:500}
+
+/* Markets */
+.markets{background:linear-gradient(135deg,var(--ink),var(--primary-dark));color:#fff}
+.markets .section-title{color:#fff}
+.markets .section-sub{color:rgba(255,255,255,.82)}
+.markets .eyebrow{color:#f4c27a}
+.regions{display:flex;flex-wrap:wrap;gap:.8rem;margin-block-start:1.8rem}
+.region{padding:.7rem 1.4rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);font-weight:600}
+.audience{margin-block-start:3rem}
+.audience .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18);box-shadow:none}
+.audience .card h3{color:#fff}
+.audience .card p{color:rgba(255,255,255,.82)}
+
+/* Contact */
+.contact-grid{display:grid;gap:2rem}
+.contact-list{display:grid;gap:1rem;align-content:start}
+.contact-item{display:flex;gap:1rem;align-items:center;padding:1.1rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);text-decoration:none}
+a.contact-item:hover{border-color:var(--primary)}
+.contact-item .ico{flex:none;width:46px;height:46px;border-radius:12px;background:#e6f4ee;color:var(--primary);display:grid;place-items:center}
+.contact-item .ico svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.contact-item small{display:block;color:var(--text-light);font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+:lang(ar) .contact-item small{letter-spacing:0;font-size:.9rem}
+.contact-item span.v{font-weight:600;word-break:break-word}
+.form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem;box-shadow:var(--shadow);display:grid;gap:1rem}
+.field label{display:block;font-size:.88rem;font-weight:600;margin-block-end:.35rem;color:var(--primary-dark)}
+.field input,.field textarea{width:100%;font:inherit;padding:.8rem .95rem;border:1.5px solid var(--line);border-radius:12px;background:var(--bg-alt);color:var(--text);transition:border-color .2s,background .2s}
+.field input:focus,.field textarea:focus{border-color:var(--primary);background:#fff;outline:none}
+.field textarea{min-height:120px;resize:vertical}
+.form-actions{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+.form-actions .btn{flex:1 1 220px}
+
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.82);padding-block:2.2rem;font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+footer a{color:#f4c27a;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* WhatsApp float */
+.wa-float{position:fixed;inset-block-end:max(1.2rem,env(safe-area-inset-bottom));inset-inline-end:1.2rem;z-index:1500;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.28);text-decoration:none;transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:currentColor}
+.wa-float .tip{position:absolute;inset-inline-end:70px;background:var(--ink);color:#fff;font-size:.82rem;font-weight:500;padding:.4rem .8rem;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.wa-float:hover .tip,.wa-float:focus-visible .tip{opacity:1}
+
+/* Reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.card,.btn,.wa-float{transition:none}}
+
+@media (min-width:900px){
+  .burger{display:none}
+  .nav{position:static;display:flex;flex-direction:row;gap:1.6rem;padding:0;border:0;box-shadow:none;background:none;margin-inline:auto}
+  .nav a{padding:.4rem 0;border:0}
+  .lang-switcher{margin-inline-start:0}
+  .contact-grid{grid-template-columns:.9fr 1.1fr;gap:3rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Ir para o conteúdo</a>
+
+<header>
+  <div class="container nav-wrapper">
+    <a href="#home" class="logo-container" id="brand" aria-label="Mabroor">
+      <!-- Substitua logo-mabroor.png pelo caminho real do logo. Se não existir, aparece o monograma. -->
+      <img src="logo-mabroor.png" alt="" class="logo-img" width="46" height="46">
+      <span class="logo-mark" aria-hidden="true">M</span>
+      <span class="logo-text">Mabroor</span>
+    </a>
+    <nav class="nav" id="menu" data-i18n-aria="nav_label" aria-label="Navegação principal">
+      <a href="#about" data-i18n="nav_about">Sobre</a>
+      <a href="#services" data-i18n="nav_services">Serviços</a>
+      <a href="#products" data-i18n="nav_products">Produtos</a>
+      <a href="#process" data-i18n="nav_process">Como funciona</a>
+      <a href="#contact" data-i18n="nav_contact">Contato</a>
+    </nav>
+    <div class="lang-switcher" role="group" aria-label="Idioma / Language">
+      <button class="lang-btn active" type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button class="lang-btn" type="button" data-lang="fr" aria-pressed="false">FR</button>
+      <button class="lang-btn" type="button" data-lang="ar" aria-pressed="false">AR</button>
+    </div>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu_open" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="home">
+    <div class="container">
+      <span class="eyebrow" data-i18n="hero_eyebrow">Representação comercial · Comércio exterior · São Paulo</span>
+      <h1 data-i18n="hero_title">Produtos Halal do Brasil para o Mundo</h1>
+      <p class="lead" data-i18n="hero_subtitle">A Mabroor é sua parceira confiável na representação e comercialização de produtos alimentícios Halal brasileiros com excelência e qualidade para o mercado global.</p>
+      <div class="cta-row">
+        <a class="btn btn-accent" href="#contact" data-i18n="hero_cta">Fale Conosco</a>
+        <a class="btn btn-ghost" href="#services" data-i18n="hero_cta2">Conheça nossos serviços</a>
+      </div>
+      <div class="badges">
+        <span class="badge" data-i18n="badge1">Certificação Halal</span>
+        <span class="badge" data-i18n="badge2">Conformidade regulatória</span>
+        <span class="badge" data-i18n="badge3">Logística até o destino</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="about_eyebrow">Quem somos</span>
+        <h2 class="section-title" data-i18n="about_title">Sobre a Mabroor</h2>
+      </div>
+      <div class="about-text reveal">
+        <p data-i18n="about_text">Sediada em São Paulo, SP, Brasil, a Mabroor atua como uma ponte estratégica entre a indústria brasileira e o mercado internacional, garantindo autenticidade, certificação Halal e logística eficiente.</p>
+        <p data-i18n="about_text2">Trabalhamos lado a lado com indústrias brasileiras e com importadores de mercados em expansão, cuidando do processo desde a busca de compradores até a chegada da mercadoria.</p>
+      </div>
+      <div class="grid grid-3 about-cards">
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3 data-i18n="p1_title">Autenticidade Halal</h3>
+          <p data-i18n="p1_text">Trabalhamos com indústrias certificadas por entidades reconhecidas, com documentação rastreável.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 0 0 6 0L5 7z"/><path d="M19 7l-3 7a3.5 3.5 0 0 0 6 0l-3-7z"/></svg></div>
+          <h3 data-i18n="p2_title">Ética e transparência</h3>
+          <p data-i18n="p2_text">Preços e condições claros (FOB/CIF), contratos objetivos e comunicação direta.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+          <h3 data-i18n="p3_title">Visão de longo prazo</h3>
+          <p data-i18n="p3_text">Relações duradouras entre indústria e comprador, com foco em qualidade e confiança.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services_eyebrow">O que fazemos</span>
+        <h2 class="section-title" data-i18n="services_title">Nossos Serviços</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-8 0"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/><circle cx="12" cy="7" r="3"/></svg></div>
+          <h3 data-i18n="s1_title">Representação comercial</h3>
+          <p data-i18n="s1_text">Prospecção de compradores, negociação e acompanhamento do pedido, atuando como extensão comercial da indústria.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h7M9 17h5"/></svg></div>
+          <h3 data-i18n="s2_title">Conformidade regulatória</h3>
+          <p data-i18n="s2_text">Apoio com registros do país de destino (como o GACC, para a China), adequação de rotulagem e legalização de certificados Halal.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+          <h3 data-i18n="s3_title">Logística de exportação</h3>
+          <p data-i18n="s3_text">Coordenação do embarque até o destino final, com preços e prazos transparentes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="products_eyebrow">Produtos</span>
+        <h2 class="section-title" data-i18n="products_title">Nossos Produtos</h2>
+        <p class="section-sub" data-i18n="products_text">Comercializamos uma vasta gama de produtos alimentícios Halal de alta qualidade, provenientes das melhores indústrias do Brasil, atendendo aos rigorosos padrões internacionais.</p>
+      </div>
+      <div class="grid grid-2">
+        <article class="card product reveal">
+          <h3 data-i18n="pr1_title">Linha de longa duração</h3>
+          <p data-i18n="pr1_text">Proteínas prontas em embalagens autoclavadas, práticas e de longa validade (como costela bovina, carne seca e frango desfiado).</p>
+        </article>
+        <article class="card product reveal">
+          <h3 data-i18n="pr2_title">Cortes premium</h3>
+          <p data-i18n="pr2_text">Cortes selecionados, como prime rib e costela em cubos, para o varejo e o food service.</p>
+        </article>
+      </div>
+      <p class="note reveal" data-i18n="products_note">Catálogo, fichas técnicas e certificados disponíveis mediante solicitação.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="process_eyebrow">Passo a passo</span>
+        <h2 class="section-title" data-i18n="process_title">Como funciona</h2>
+      </div>
+      <ol class="steps" style="list-style:none">
+        <li class="step reveal"><h3 data-i18n="st1_title">Contato e alinhamento</h3><p data-i18n="st1_text">Entendemos suas necessidades, produtos e mercados de interesse.</p></li>
+        <li class="step reveal"><h3 data-i18n="st2_title">Proposta e negociação</h3><p data-i18n="st2_text">Apresentamos uma proposta clara, com preços FOB ou CIF, e negociamos as condições.</p></li>
+        <li class="step reveal"><h3 data-i18n="st3_title">Conformidade e documentos</h3><p data-i18n="st3_text">Revisamos registros, rotulagem e certificados Halal exigidos pelo destino.</p></li>
+        <li class="step reveal"><h3 data-i18n="st4_title">Embarque e acompanhamento</h3><p data-i18n="st4_text">Coordenamos o embarque e acompanhamos o pedido até a entrega.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section markets" id="markets">
+    <div class="container">
+      <div class="section-head reveal" style="margin-block-end:0">
+        <span class="eyebrow" data-i18n="markets_eyebrow">Mercados</span>
+        <h2 class="section-title" data-i18n="markets_title">Para onde levamos o Brasil</h2>
+        <p class="section-sub" data-i18n="markets_text">Atendemos importadores em mercados em expansão, respeitando as exigências de cada país.</p>
+        <div class="regions">
+          <span class="region" data-i18n="region1">Oriente Médio</span>
+          <span class="region" data-i18n="region2">África</span>
+          <span class="region" data-i18n="region3">Ásia</span>
+        </div>
+      </div>
+      <div class="grid grid-2 audience">
+        <article class="card reveal"><h3 data-i18n="aud1_title">Para importadores</h3><p data-i18n="aud1_text">Acesso a produtos brasileiros Halal com documentação e logística organizadas.</p></article>
+        <article class="card reveal"><h3 data-i18n="aud2_title">Para indústrias brasileiras</h3><p data-i18n="aud2_text">Uma equipe comercial para abrir mercados internacionais, sem a necessidade de montar um departamento de exportação.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="contact_eyebrow">Contato</span>
+        <h2 class="section-title" data-i18n="contact_title">Entre em Contato</h2>
+        <p class="section-sub" data-i18n="contact_text">Conte o que você procura e responderemos o mais breve possível.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-list reveal">
+          <a class="contact-item js-wa" href="#" target="_blank" rel="noopener">
+            <span class="ico" style="background:#dcf8e6;color:#128c4a"><svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.78a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg></span>
+            <span><small data-i18n="wa_label">WhatsApp</small><span class="v" data-i18n="wa_cta">Conversar no WhatsApp</span></span>
+          </a>
+          <a class="contact-item" href="mailto:ilyes@baymabroor.com">
+            <span class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+            <span><small data-i18n="contact_email_label">E-mail</small><span class="v"><bdi dir="ltr">ilyes@baymabroor.com</bdi></span></span>
+          </a>
+          <a class="contact-item" href="tel:+5511984112352">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span><small data-i18n="contact_phone_label">Telefone</small><span class="v"><bdi dir="ltr">+55 11 98411-2352</bdi></span></span>
+          </a>
+          <div class="contact-item">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><small data-i18n="contact_location_label">Localização</small><span class="v" data-i18n="location_value">São Paulo, SP, Brasil</span></span>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field"><label for="f-name" data-i18n="f_name">Nome</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-company" data-i18n="f_company">Empresa</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+          <div class="field"><label for="f-country" data-i18n="f_country">País</label><input id="f-country" name="country" type="text" autocomplete="country-name"></div>
+          <div class="field"><label for="f-message" data-i18n="f_message">Mensagem</label><textarea id="f-message" name="message" required></textarea></div>
+          <div class="form-actions">
+            <button class="btn btn-wa" type="submit" id="send-wa">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.78a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg>
+              <span data-i18n="send_wa">Enviar pelo WhatsApp</span>
+            </button>
+            <button class="btn btn-line" type="button" id="send-mail" data-i18n="send_mail">Prefiro e-mail</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container foot">
+    <p><span data-i18n="footer_text">© 2026 Mabroor. Todos os direitos reservados.</span></p>
+    <p><a href="https://baymabroor.com" target="_blank" rel="noopener"><bdi dir="ltr">baymabroor.com</bdi></a></p>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="#" target="_blank" rel="noopener" data-i18n-aria="wa_aria" aria-label="Fale conosco no WhatsApp">
+  <span class="tip" data-i18n="wa_tip">Fale conosco</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.78a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA_NUMBER = '5511984112352';
+  var EMAIL = 'ilyes@baymabroor.com';
+
+  var T = {
+    pt:{
+      htmlLang:'pt-BR',
+      meta_title:'Mabroor | Produtos Halal do Brasil para o Mundo',
+      meta_desc:'Mabroor: representação comercial e exportação de produtos alimentícios Halal brasileiros para o Oriente Médio, África e Ásia.',
+      skip:'Ir para o conteúdo', nav_label:'Navegação principal', menu_open:'Abrir menu', menu_close:'Fechar menu',
+      nav_about:'Sobre', nav_services:'Serviços', nav_products:'Produtos', nav_process:'Como funciona', nav_contact:'Contato',
+      hero_eyebrow:'Representação comercial · Comércio exterior · São Paulo',
+      hero_title:'Produtos Halal do Brasil para o Mundo',
+      hero_subtitle:'A Mabroor é sua parceira confiável na representação e comercialização de produtos alimentícios Halal brasileiros com excelência e qualidade para o mercado global.',
+      hero_cta:'Fale Conosco', hero_cta2:'Conheça nossos serviços',
+      badge1:'Certificação Halal', badge2:'Conformidade regulatória', badge3:'Logística até o destino',
+      about_eyebrow:'Quem somos', about_title:'Sobre a Mabroor',
+      about_text:'Sediada em São Paulo, SP, Brasil, a Mabroor atua como uma ponte estratégica entre a indústria brasileira e o mercado internacional, garantindo autenticidade, certificação Halal e logística eficiente.',
+      about_text2:'Trabalhamos lado a lado com indústrias brasileiras e com importadores de mercados em expansão, cuidando do processo desde a busca de compradores até a chegada da mercadoria.',
+      p1_title:'Autenticidade Halal', p1_text:'Trabalhamos com indústrias certificadas por entidades reconhecidas, com documentação rastreável.',
+      p2_title:'Ética e transparência', p2_text:'Preços e condições claros (FOB/CIF), contratos objetivos e comunicação direta.',
+      p3_title:'Visão de longo prazo', p3_text:'Relações duradouras entre indústria e comprador, com foco em qualidade e confiança.',
+      services_eyebrow:'O que fazemos', services_title:'Nossos Serviços',
+      s1_title:'Representação comercial', s1_text:'Prospecção de compradores, negociação e acompanhamento do pedido, atuando como extensão comercial da indústria.',
+      s2_title:'Conformidade regulatória', s2_text:'Apoio com registros do país de destino (como o GACC, para a China), adequação de rotulagem e legalização de certificados Halal.',
+      s3_title:'Logística de exportação', s3_text:'Coordenação do embarque até o destino final, com preços e prazos transparentes.',
+      products_eyebrow:'Produtos', products_title:'Nossos Produtos',
+      products_text:'Comercializamos uma vasta gama de produtos alimentícios Halal de alta qualidade, provenientes das melhores indústrias do Brasil, atendendo aos rigorosos padrões internacionais.',
+      pr1_title:'Linha de longa duração', pr1_text:'Proteínas prontas em embalagens autoclavadas, práticas e de longa validade (como costela bovina, carne seca e frango desfiado).',
+      pr2_title:'Cortes premium', pr2_text:'Cortes selecionados, como prime rib e costela em cubos, para o varejo e o food service.',
+      products_note:'Catálogo, fichas técnicas e certificados disponíveis mediante solicitação.',
+      process_eyebrow:'Passo a passo', process_title:'Como funciona',
+      st1_title:'Contato e alinhamento', st1_text:'Entendemos suas necessidades, produtos e mercados de interesse.',
+      st2_title:'Proposta e negociação', st2_text:'Apresentamos uma proposta clara, com preços FOB ou CIF, e negociamos as condições.',
+      st3_title:'Conformidade e documentos', st3_text:'Revisamos registros, rotulagem e certificados Halal exigidos pelo destino.',
+      st4_title:'Embarque e acompanhamento', st4_text:'Coordenamos o embarque e acompanhamos o pedido até a entrega.',
+      markets_eyebrow:'Mercados', markets_title:'Para onde levamos o Brasil',
+      markets_text:'Atendemos importadores em mercados em expansão, respeitando as exigências de cada país.',
+      region1:'Oriente Médio', region2:'África', region3:'Ásia',
+      aud1_title:'Para importadores', aud1_text:'Acesso a produtos brasileiros Halal com documentação e logística organizadas.',
+      aud2_title:'Para indústrias brasileiras', aud2_text:'Uma equipe comercial para abrir mercados internacionais, sem a necessidade de montar um departamento de exportação.',
+      contact_eyebrow:'Contato', contact_title:'Entre em Contato', contact_text:'Conte o que você procura e responderemos o mais breve possível.',
+      wa_label:'WhatsApp', wa_cta:'Conversar no WhatsApp',
+      contact_email_label:'E-mail', contact_phone_label:'Telefone', contact_location_label:'Localização', location_value:'São Paulo, SP, Brasil',
+      f_name:'Nome', f_company:'Empresa', f_country:'País', f_message:'Mensagem',
+      send_wa:'Enviar pelo WhatsApp', send_mail:'Prefiro e-mail',
+      footer_text:'© 2026 Mabroor. Todos os direitos reservados.',
+      wa_tip:'Fale conosco', wa_aria:'Fale conosco no WhatsApp',
+      wa_msg:'Olá! Vim pelo site da Mabroor e gostaria de mais informações.',
+      wa_form:'Olá! Vim pelo site da Mabroor.', mail_subject:'Contato pelo site da Mabroor'
+    },
+    en:{
+      htmlLang:'en',
+      meta_title:'Mabroor | Halal Products from Brazil to the World',
+      meta_desc:'Mabroor: commercial representation and export of Brazilian Halal food products to the Middle East, Africa and Asia.',
+      skip:'Skip to content', nav_label:'Main navigation', menu_open:'Open menu', menu_close:'Close menu',
+      nav_about:'About', nav_services:'Services', nav_products:'Products', nav_process:'How it works', nav_contact:'Contact',
+      hero_eyebrow:'Commercial representation · Foreign trade · São Paulo',
+      hero_title:'Halal Products from Brazil to the World',
+      hero_subtitle:'Mabroor is your trusted partner in the representation and commercialization of Brazilian Halal food products with excellence and quality for the global market.',
+      hero_cta:'Contact Us', hero_cta2:'Discover our services',
+      badge1:'Halal certification', badge2:'Regulatory compliance', badge3:'Logistics to destination',
+      about_eyebrow:'Who we are', about_title:'About Mabroor',
+      about_text:'Based in São Paulo, SP, Brazil, Mabroor acts as a strategic bridge between Brazilian industry and the international market, ensuring authenticity, Halal certification, and efficient logistics.',
+      about_text2:'We work side by side with Brazilian manufacturers and with importers in growing markets, handling the process from finding buyers to the arrival of the goods.',
+      p1_title:'Halal authenticity', p1_text:'We work with manufacturers certified by recognized bodies, with traceable documentation.',
+      p2_title:'Ethics and transparency', p2_text:'Clear prices and terms (FOB/CIF), straightforward contracts and direct communication.',
+      p3_title:'Long-term vision', p3_text:'Lasting relationships between manufacturer and buyer, focused on quality and trust.',
+      services_eyebrow:'What we do', services_title:'Our Services',
+      s1_title:'Commercial representation', s1_text:'Buyer prospecting, negotiation and order follow-up, acting as the manufacturer\'s commercial arm.',
+      s2_title:'Regulatory compliance', s2_text:'Support with destination-country registrations (such as GACC for China), label adaptation and legalization of Halal certificates.',
+      s3_title:'Export logistics', s3_text:'Coordination of shipment to the final destination, with transparent prices and lead times.',
+      products_eyebrow:'Products', products_title:'Our Products',
+      products_text:'We commercialize a wide range of high-quality Halal food products from the best industries in Brazil, meeting strict international standards.',
+      pr1_title:'Long shelf-life line', pr1_text:'Ready-to-eat proteins in retort pouches, practical and long-lasting (such as beef ribs, dried beef and shredded chicken).',
+      pr2_title:'Premium cuts', pr2_text:'Selected cuts, such as prime rib and cubed ribs, for retail and food service.',
+      products_note:'Catalog, technical sheets and certificates available on request.',
+      process_eyebrow:'Step by step', process_title:'How it works',
+      st1_title:'Contact and alignment', st1_text:'We understand your needs, products and target markets.',
+      st2_title:'Proposal and negotiation', st2_text:'We present a clear proposal, with FOB or CIF prices, and negotiate the terms.',
+      st3_title:'Compliance and documents', st3_text:'We review the registrations, labeling and Halal certificates required by the destination.',
+      st4_title:'Shipment and follow-up', st4_text:'We coordinate shipment and follow the order through to delivery.',
+      markets_eyebrow:'Markets', markets_title:'Where we take Brazil',
+      markets_text:'We serve importers in growing markets, respecting each country\'s requirements.',
+      region1:'Middle East', region2:'Africa', region3:'Asia',
+      aud1_title:'For importers', aud1_text:'Access to Brazilian Halal products with organized documentation and logistics.',
+      aud2_title:'For Brazilian manufacturers', aud2_text:'A commercial team to open international markets, without the need to build an export department.',
+      contact_eyebrow:'Contact', contact_title:'Contact Us', contact_text:'Tell us what you are looking for and we will reply as soon as possible.',
+      wa_label:'WhatsApp', wa_cta:'Chat on WhatsApp',
+      contact_email_label:'Email', contact_phone_label:'Phone', contact_location_label:'Location', location_value:'São Paulo, SP, Brazil',
+      f_name:'Name', f_company:'Company', f_country:'Country', f_message:'Message',
+      send_wa:'Send via WhatsApp', send_mail:'I prefer email',
+      footer_text:'© 2026 Mabroor. All rights reserved.',
+      wa_tip:'Chat with us', wa_aria:'Chat with us on WhatsApp',
+      wa_msg:'Hello! I came from the Mabroor website and would like more information.',
+      wa_form:'Hello! I came from the Mabroor website.', mail_subject:'Contact from the Mabroor website'
+    },
+    fr:{
+      htmlLang:'fr',
+      meta_title:'Mabroor | Produits Halal du Brésil vers le Monde',
+      meta_desc:'Mabroor : représentation commerciale et exportation de produits alimentaires halal brésiliens vers le Moyen-Orient, l\'Afrique et l\'Asie.',
+      skip:'Aller au contenu', nav_label:'Navigation principale', menu_open:'Ouvrir le menu', menu_close:'Fermer le menu',
+      nav_about:'À propos', nav_services:'Services', nav_products:'Produits', nav_process:'Fonctionnement', nav_contact:'Contact',
+      hero_eyebrow:'Représentation commerciale · Commerce extérieur · São Paulo',
+      hero_title:'Produits Halal du Brésil vers le Monde',
+      hero_subtitle:'Mabroor est votre partenaire de confiance dans la représentation et la commercialisation de produits alimentaires halal du Brésil avec excellence et qualité pour le marché mondial.',
+      hero_cta:'Contactez-nous', hero_cta2:'Découvrez nos services',
+      badge1:'Certification halal', badge2:'Conformité réglementaire', badge3:'Logistique jusqu\'à destination',
+      about_eyebrow:'Qui sommes-nous', about_title:'À propos de Mabroor',
+      about_text:'Basée à São Paulo, SP, Brésil, Mabroor agit comme un pont stratégique entre l\'industrie brésilienne et le marché international, garantissant authenticité, certification halal et logistique efficace.',
+      about_text2:'Nous travaillons main dans la main avec des industriels brésiliens et des importateurs de marchés en expansion, en gérant le processus de la recherche d\'acheteurs jusqu\'à l\'arrivée de la marchandise.',
+      p1_title:'Authenticité halal', p1_text:'Nous travaillons avec des industriels certifiés par des organismes reconnus, avec une documentation traçable.',
+      p2_title:'Éthique et transparence', p2_text:'Prix et conditions clairs (FOB/CIF), contrats simples et communication directe.',
+      p3_title:'Vision à long terme', p3_text:'Des relations durables entre industriel et acheteur, axées sur la qualité et la confiance.',
+      services_eyebrow:'Ce que nous faisons', services_title:'Nos Services',
+      s1_title:'Représentation commerciale', s1_text:'Prospection d\'acheteurs, négociation et suivi des commandes, en tant que prolongement commercial de l\'industriel.',
+      s2_title:'Conformité réglementaire', s2_text:'Appui pour les enregistrements du pays de destination (comme le GACC pour la Chine), l\'adaptation de l\'étiquetage et la légalisation des certificats halal.',
+      s3_title:'Logistique d\'exportation', s3_text:'Coordination de l\'expédition jusqu\'à la destination finale, avec des prix et des délais transparents.',
+      products_eyebrow:'Produits', products_title:'Nos Produits',
+      products_text:'Nous commercialisons une large gamme de produits alimentaires halal de haute qualité, provenant des meilleures industries du Brésil, répondant aux normes internationales strictes.',
+      pr1_title:'Gamme longue conservation', pr1_text:'Protéines prêtes à consommer en emballages autoclavés, pratiques et de longue conservation (comme les côtes de bœuf, la viande séchée et le poulet effiloché).',
+      pr2_title:'Coupes premium', pr2_text:'Coupes sélectionnées, comme la côte de bœuf et les côtes en cubes, pour la distribution et la restauration.',
+      products_note:'Catalogue, fiches techniques et certificats disponibles sur demande.',
+      process_eyebrow:'Étape par étape', process_title:'Fonctionnement',
+      st1_title:'Contact et alignement', st1_text:'Nous comprenons vos besoins, vos produits et vos marchés cibles.',
+      st2_title:'Proposition et négociation', st2_text:'Nous présentons une proposition claire, avec des prix FOB ou CIF, et négocions les conditions.',
+      st3_title:'Conformité et documents', st3_text:'Nous vérifions les enregistrements, l\'étiquetage et les certificats halal exigés par la destination.',
+      st4_title:'Expédition et suivi', st4_text:'Nous coordonnons l\'expédition et suivons la commande jusqu\'à la livraison.',
+      markets_eyebrow:'Marchés', markets_title:'Là où nous portons le Brésil',
+      markets_text:'Nous servons des importateurs sur des marchés en expansion, en respectant les exigences de chaque pays.',
+      region1:'Moyen-Orient', region2:'Afrique', region3:'Asie',
+      aud1_title:'Pour les importateurs', aud1_text:'Accès à des produits halal brésiliens avec documentation et logistique organisées.',
+      aud2_title:'Pour les industriels brésiliens', aud2_text:'Une équipe commerciale pour ouvrir les marchés internationaux, sans avoir à créer un service export.',
+      contact_eyebrow:'Contact', contact_title:'Contactez-nous', contact_text:'Dites-nous ce que vous recherchez et nous répondrons dès que possible.',
+      wa_label:'WhatsApp', wa_cta:'Discuter sur WhatsApp',
+      contact_email_label:'E-mail', contact_phone_label:'Téléphone', contact_location_label:'Emplacement', location_value:'São Paulo, SP, Brésil',
+      f_name:'Nom', f_company:'Entreprise', f_country:'Pays', f_message:'Message',
+      send_wa:'Envoyer via WhatsApp', send_mail:'Je préfère l\'e-mail',
+      footer_text:'© 2026 Mabroor. Tous droits réservés.',
+      wa_tip:'Écrivez-nous', wa_aria:'Écrivez-nous sur WhatsApp',
+      wa_msg:'Bonjour ! Je viens du site de Mabroor et je souhaiterais plus d\'informations.',
+      wa_form:'Bonjour ! Je viens du site de Mabroor.', mail_subject:'Contact depuis le site de Mabroor'
+    },
+    ar:{
+      htmlLang:'ar',
+      meta_title:'مبرور | منتجات حلال من البرازيل إلى العالم',
+      meta_desc:'مبرور: تمثيل تجاري وتصدير المنتجات الغذائية الحلال البرازيلية إلى الشرق الأوسط وأفريقيا وآسيا.',
+      skip:'انتقل إلى المحتوى', nav_label:'التنقل الرئيسي', menu_open:'فتح القائمة', menu_close:'إغلاق القائمة',
+      nav_about:'من نحن', nav_services:'خدماتنا', nav_products:'منتجاتنا', nav_process:'كيف نعمل', nav_contact:'اتصل بنا',
+      hero_eyebrow:'تمثيل تجاري · تجارة خارجية · ساو باولو',
+      hero_title:'منتجات حلال من البرازيل إلى العالم',
+      hero_subtitle:'تُعد مبرور شريكك الموثوق في تمثيل وتسويق المنتجات الغذائية الحلال البرازيلية بجودة وتميز للأسواق العالمية.',
+      hero_cta:'اتصل بنا', hero_cta2:'تعرّف على خدماتنا',
+      badge1:'شهادة الحلال', badge2:'الامتثال التنظيمي', badge3:'الخدمات اللوجستية حتى الوجهة',
+      about_eyebrow:'من نحن', about_title:'عن مبرور',
+      about_text:'مقر مبرور في ساو باولو، البرازيل، وتعمل كجسر استراتيجي بين الصناعة البرازيلية والأسواق الدولية، مما يضمن الأصالة، وشهادة الحلال، وكفاءة الخدمات اللوجستية.',
+      about_text2:'نعمل جنبًا إلى جنب مع المصانع البرازيلية والمستوردين في الأسواق الناشئة، ونتولى العملية من البحث عن المشترين حتى وصول البضاعة.',
+      p1_title:'أصالة الحلال', p1_text:'نتعامل مع مصانع حاصلة على شهادات من جهات معروفة، مع وثائق قابلة للتتبع.',
+      p2_title:'الأخلاق والشفافية', p2_text:'أسعار وشروط واضحة (FOB/CIF)، وعقود مباشرة، وتواصل صريح.',
+      p3_title:'رؤية بعيدة المدى', p3_text:'علاقات دائمة بين المصنع والمشتري قائمة على الجودة والثقة.',
+      services_eyebrow:'ماذا نقدم', services_title:'خدماتنا',
+      s1_title:'التمثيل التجاري', s1_text:'البحث عن المشترين والتفاوض ومتابعة الطلبات، كامتداد تجاري للمصنع.',
+      s2_title:'الامتثال التنظيمي', s2_text:'دعم في تسجيلات بلد الوجهة (مثل GACC للصين)، وملاءمة الملصقات، وتصديق شهادات الحلال.',
+      s3_title:'الخدمات اللوجستية للتصدير', s3_text:'تنسيق الشحن حتى الوجهة النهائية بأسعار ومواعيد شفافة.',
+      products_eyebrow:'المنتجات', products_title:'منتجاتنا',
+      products_text:'نقوم بتسويق مجموعة واسعة من المنتجات الغذائية الحلال عالية الجودة من أفضل المصانع في البرازيل، لتلبية المعايير الدولية الصارمة.',
+      pr1_title:'خط طويل الصلاحية', pr1_text:'بروتينات جاهزة في عبوات معقّمة بالأوتوكلاف، عملية وطويلة الصلاحية (مثل ضلوع البقر واللحم المجفف والدجاج المفتّت).',
+      pr2_title:'قطع مميزة', pr2_text:'قطع مختارة مثل البرايم ريب وضلوع البقر المقطّعة إلى مكعبات، للتجزئة وقطاع الخدمات الغذائية.',
+      products_note:'الكتالوج والمواصفات الفنية والشهادات متاحة عند الطلب.',
+      process_eyebrow:'خطوة بخطوة', process_title:'كيف نعمل',
+      st1_title:'التواصل والتفاهم', st1_text:'نفهم احتياجاتك ومنتجاتك وأسواقك المستهدفة.',
+      st2_title:'العرض والتفاوض', st2_text:'نقدّم عرضًا واضحًا بأسعار FOB أو CIF ونتفاوض على الشروط.',
+      st3_title:'الامتثال والوثائق', st3_text:'نراجع التسجيلات والملصقات وشهادات الحلال المطلوبة في بلد الوجهة.',
+      st4_title:'الشحن والمتابعة', st4_text:'ننسّق الشحن ونتابع الطلب حتى التسليم.',
+      markets_eyebrow:'الأسواق', markets_title:'إلى أين نصل',
+      markets_text:'نخدم مستوردين في أسواق متنامية، مع احترام متطلبات كل بلد.',
+      region1:'الشرق الأوسط', region2:'أفريقيا', region3:'آسيا',
+      aud1_title:'للمستوردين', aud1_text:'وصول إلى منتجات برازيلية حلال مع وثائق وخدمات لوجستية منظمة.',
+      aud2_title:'للمصانع البرازيلية', aud2_text:'فريق تجاري لفتح الأسواق الدولية، دون الحاجة إلى إنشاء قسم للتصدير.',
+      contact_eyebrow:'تواصل', contact_title:'اتصل بنا', contact_text:'أخبرنا بما تبحث عنه وسنرد عليك في أقرب وقت.',
+      wa_label:'واتساب', wa_cta:'تحدث عبر واتساب',
+      contact_email_label:'البريد الإلكتروني', contact_phone_label:'الهاتف', contact_location_label:'الموقع', location_value:'ساو باولو، البرازيل',
+      f_name:'الاسم', f_company:'الشركة', f_country:'البلد', f_message:'الرسالة',
+      send_wa:'إرسال عبر واتساب', send_mail:'أفضّل البريد الإلكتروني',
+      footer_text:'© 2026 مبرور. جميع الحقوق محفوظة.',
+      wa_tip:'تحدث معنا', wa_aria:'تحدث معنا عبر واتساب',
+      wa_msg:'مرحبا! جئت من موقع مبرور وأود الحصول على مزيد من المعلومات.',
+      wa_form:'مرحبا! جئت من موقع مبرور.', mail_subject:'تواصل من موقع مبرور'
+    }
+  };
+
+  var current = 'pt';
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+
+  function waUrl(text){ return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text); }
+
+  function setLanguage(lang){
+    if(!T[lang]) lang = 'pt';
+    current = lang;
+    var t = T[lang];
+    document.documentElement.lang = t.htmlLang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.title = t.meta_title;
+    var md = $('meta[name="description"]'); if(md) md.setAttribute('content', t.meta_desc);
+    var ogt = $('meta[property="og:title"]'); if(ogt) ogt.setAttribute('content', t.meta_title);
+    $$('[data-i18n]').forEach(function(el){ var k = el.getAttribute('data-i18n'); if(t[k] !== undefined) el.textContent = t[k]; });
+    $$('[data-i18n-aria]').forEach(function(el){ var k = el.getAttribute('data-i18n-aria'); if(t[k] !== undefined) el.setAttribute('aria-label', t[k]); });
+    $$('.lang-btn').forEach(function(b){
+      var on = b.getAttribute('data-lang') === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    $$('.js-wa').forEach(function(a){ a.setAttribute('href', waUrl(t.wa_msg)); });
+    syncBurger();
+    try { localStorage.setItem('mabroor-lang', lang); } catch(e) {}
+  }
+
+  // Menu mobile
+  var burger = $('#burger'), menu = $('#menu');
+  function syncBurger(){
+    var open = menu.classList.contains('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', T[current][open ? 'menu_close' : 'menu_open']);
+  }
+  burger.addEventListener('click', function(){ menu.classList.toggle('open'); syncBurger(); });
+  $$('a', menu).forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); syncBurger(); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ menu.classList.remove('open'); syncBurger(); } });
+
+  $$('.lang-btn').forEach(function(b){ b.addEventListener('click', function(){ setLanguage(b.getAttribute('data-lang')); }); });
+
+  // Logo: se a imagem não existir, mostra o monograma
+  var logo = $('.logo-img'), brand = $('#brand');
+  function noLogo(){ brand.classList.add('no-logo'); }
+  logo.addEventListener('error', noLogo);
+  if(logo.complete && logo.naturalWidth === 0) noLogo();
+
+  // Formulário -> WhatsApp ou e-mail
+  var form = $('#contact-form');
+  function formText(){
+    var t = T[current], d = new FormData(form);
+    var lines = [t.wa_form];
+    [['f_name','name'],['f_company','company'],['f_country','country'],['f_message','message']].forEach(function(p){
+      var v = (d.get(p[1]) || '').toString().trim();
+      if(v) lines.push(t[p[0]] + ': ' + v);
+    });
+    return lines.join('\n');
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    window.open(waUrl(formText()), '_blank', 'noopener');
+  });
+  $('#send-mail').addEventListener('click', function(){
+    if(!form.reportValidity()) return;
+    window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(T[current].mail_subject) + '&body=' + encodeURIComponent(formText());
+  });
+
+  // Animação de entrada
+  var items = $$('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.add('in'); }); }
+
+  // Idioma inicial: escolha salva > idioma do navegador > português
+  var start = 'pt';
+  try { var saved = localStorage.getItem('mabroor-lang'); if(saved && T[saved]) start = saved; else {
+    var nav = (navigator.language || 'pt').slice(0,2).toLowerCase(); if(T[nav]) start = nav; } } catch(e) {}
+  setLanguage(start);
+})();
+</script>
+</body>
+</html>
